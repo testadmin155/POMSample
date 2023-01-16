@@ -1,0 +1,15 @@
+package MavenProject.FirstTest;
+
+public class SeleniumTest {
+
+	public static void main(String[] args) {
+		
+		
+		public void loginwithweb()
+		{
+			System.out.println("loginwithweb");
+		}
+
+	}
+
+}

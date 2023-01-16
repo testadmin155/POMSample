@@ -1,0 +1,20 @@
+package MavenProject.FirstTest;
+
+import org.testng.annotations.Test;
+
+public class APITest {
+
+	@Test
+	public void APIwithWeb()
+	{
+		System.out.println("APIwithWeb");
+	}
+	
+	@Test
+	public void APIwithBranch()
+	{
+		System.out.println("APIwithBranch");
+	}
+
+
+}
