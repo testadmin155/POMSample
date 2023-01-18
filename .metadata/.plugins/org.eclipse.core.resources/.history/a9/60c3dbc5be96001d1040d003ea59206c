@@ -1,0 +1,15 @@
+package MavenProject.FirstTest;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	
+	static WebDriver driver;
+	
+	public void BaseTest(WebDriver driver)
+	{
+		this.driver=driver;
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package MavenProject.FirstTest;
+
+public class LoginTest extends BaseTest{
+
+	
+	
+	
+}

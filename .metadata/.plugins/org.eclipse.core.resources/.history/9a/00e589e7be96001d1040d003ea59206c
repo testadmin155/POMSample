@@ -1,0 +1,30 @@
+package MavenProject.FirstTest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage {
+	
+	static WebDriver driver;
+	
+	public void BaseTest(WebDriver driver)
+	{
+		this.driver=driver;		
+	}
+	
+	//Page Factory
+	//driver.findElement(By.id("username")).sendKeys("automationtestacademy@gmail.com");
+	@FindBy(id="username")
+	WebElement emailid;
+	
+	//driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Test@9999");
+	@FindBy(xpath="//input[@type='password']")
+	WebElement password;
+	
+	//driver.findElement(By.id("loginBtn")).click();
+	@FindBy(id="loginBtn")
+	WebElement loginbtn;
+
+}

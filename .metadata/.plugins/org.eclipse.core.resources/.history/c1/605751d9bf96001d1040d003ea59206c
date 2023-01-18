@@ -1,0 +1,38 @@
+package MavenProject.FirstTest;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class LoginTest extends BaseTest{
+
+	@BeforeSuite
+	public void setup() {
+		launchApp("Chrome"); 
+	}
+	
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	public LoginTest()
+	{
+		LoginPage lp = new LoginPage();
+		return ;
+	}
+	@Test
+	public void ValidLogin() throws InterruptedException
+	{
+	
+		
+		
+		
+		Thread.sleep(5000);
+		driver.findElement(By.id("code")).sendKeys("9999");
+
+	}
+	
+}

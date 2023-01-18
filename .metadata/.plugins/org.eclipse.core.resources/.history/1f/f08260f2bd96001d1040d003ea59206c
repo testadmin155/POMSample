@@ -1,0 +1,31 @@
+package MavenProject.FirstTest;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class LoginTest extends BaseTest{
+
+	@BeforeSuite
+	public void setup() {
+		launchApp("Chrome"); 
+	}
+	
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void ValidLogin() throws InterruptedException
+	{
+		driver.findElement(By.id("username")).sendKeys("automationtestacademy@gmail.com");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Test@9999");
+		driver.findElement(By.id("loginBtn")).click();
+		
+		driver.findElement(By.id("code")).sendKeys("9999");
+		Thread.sleep(5000);
+	}
+	
+}

@@ -1,0 +1,19 @@
+package MavenProject.FirstTest;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+public class LoginTest extends BaseTest{
+
+	@BeforeSuite
+	public void setup() {
+		launchApp("Chrome"); 
+	}
+	
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	
+}
