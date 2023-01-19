@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import Utility.BaseTest;
+
 public class LoginTest extends BaseTest{
 
 	@BeforeSuite
@@ -26,7 +28,7 @@ public class LoginTest extends BaseTest{
 		HomePage hp = new HomePage(driver);
 		
 		lp.login();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		hp.EnterCode();
 
 	}

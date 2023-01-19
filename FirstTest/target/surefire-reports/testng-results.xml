@@ -1,46 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="84" started-at="2023-01-17T19:14:37Z" finished-at="2023-01-17T19:14:37Z">
+  <suite started-at="2023-01-19T22:48:11Z" name="MavenProject.FirstTest.LoginTest" finished-at="2023-01-19T22:48:14Z" duration-ms="2730">
     <groups>
-      <group name="sanity">
-        <method signature="APITest.APIwithPostman()[pri:0, instance:MavenProject.FirstTest.APITest@78047b92]" name="APIwithPostman" class="MavenProject.FirstTest.APITest"/>
-        <method signature="AppiumTest.LoginwithiOS()[pri:0, instance:MavenProject.FirstTest.AppiumTest@7a52f2a2]" name="LoginwithiOS" class="MavenProject.FirstTest.AppiumTest"/>
-        <method signature="SeleniumTest.LoginwithBranch()[pri:0, instance:MavenProject.FirstTest.SeleniumTest@5db45159]" name="LoginwithBranch" class="MavenProject.FirstTest.SeleniumTest"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="84" started-at="2023-01-17T19:14:37Z" finished-at="2023-01-17T19:14:37Z">
-      <class name="MavenProject.FirstTest.AppiumTest">
-        <test-method status="PASS" signature="LoginwithAndroid()[pri:0, instance:MavenProject.FirstTest.AppiumTest@7a52f2a2]" name="LoginwithAndroid" duration-ms="8" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
+    <test started-at="2023-01-19T22:48:11Z" name="Command line test" finished-at="2023-01-19T22:48:14Z" duration-ms="2730">
+      <class name="MavenProject.FirstTest.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:MavenProject.FirstTest.LoginTest@1534f01b]" started-at="2023-01-19T23:48:04Z" name="setup" finished-at="2023-01-19T23:48:11Z" duration-ms="7019" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginwithAndroid -->
-        <test-method status="PASS" signature="LoginwithiOS()[pri:0, instance:MavenProject.FirstTest.AppiumTest@7a52f2a2]" name="LoginwithiOS" duration-ms="2" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin()[pri:0, instance:MavenProject.FirstTest.LoginTest@1534f01b]" started-at="2023-01-19T23:48:11Z" name="ValidLogin" finished-at="2023-01-19T23:48:14Z" duration-ms="2716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginwithiOS -->
-      </class> <!-- MavenProject.FirstTest.AppiumTest -->
-      <class name="MavenProject.FirstTest.SeleniumTest">
-        <test-method status="PASS" signature="LoginwithBranch()[pri:0, instance:MavenProject.FirstTest.SeleniumTest@5db45159]" name="LoginwithBranch" duration-ms="1" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProject.FirstTest.LoginTest@1534f01b]" started-at="2023-01-19T23:48:14Z" name="tearDown" finished-at="2023-01-19T23:48:14Z" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginwithBranch -->
-        <test-method status="PASS" signature="Loginwithweb()[pri:0, instance:MavenProject.FirstTest.SeleniumTest@5db45159]" name="Loginwithweb" duration-ms="0" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Loginwithweb -->
-      </class> <!-- MavenProject.FirstTest.SeleniumTest -->
-      <class name="MavenProject.FirstTest.APITest">
-        <test-method status="PASS" signature="APIwithPostman()[pri:0, instance:MavenProject.FirstTest.APITest@78047b92]" name="APIwithPostman" duration-ms="28" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APIwithPostman -->
-        <test-method status="PASS" signature="APIwithSoapUI()[pri:0, instance:MavenProject.FirstTest.APITest@78047b92]" name="APIwithSoapUI" duration-ms="2" started-at="2023-01-17T20:14:37Z" finished-at="2023-01-17T20:14:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APIwithSoapUI -->
-      </class> <!-- MavenProject.FirstTest.APITest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- MavenProject.FirstTest.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- MavenProject.FirstTest.LoginTest -->
 </testng-results>

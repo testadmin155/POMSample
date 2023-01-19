@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage{
 	
-     WebDriver driver;
+	public WebDriver driver;
 	
 	public HomePage(WebDriver driver)
 	{
@@ -16,7 +16,7 @@ public class HomePage{
 	}
 	
 	//Page Factory
-	//driver.findElement(By.id("username")).sendKeys("automationtestacademy@gmail.com");
+	//driver.findElement(By.id("code")).sendKeys("9999");
 	@FindBy(id="code")
 	WebElement code;
 	
